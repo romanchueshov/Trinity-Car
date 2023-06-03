@@ -1,0 +1,210 @@
+// Section About Us
+.about-us{
+    position: relative;
+    padding: 0 0 260px 0;
+    overflow-x: hidden;
+
+    &__title{
+        @include font(160px, 700);
+        text-align: center;
+        padding: 0 0 146px 0;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 170px;
+            z-index: 9;
+            width: 314px;
+            height: 314px;
+            background: $blue;
+            filter: blur(310px);
+            z-index: 9;
+        }
+    }
+
+    &__features{
+        max-width: 1362px;
+        margin: 0 auto;
+        padding: 0 20px 150px 20px;
+
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-iteam{
+            max-width: 396px;
+        }
+
+        &-subtitle{
+            @include font(24px, 500);
+
+            &-number{
+                @include font(130px, 700);
+                color: transparent;
+                -webkit-text-stroke: 3px $turquoise;
+            }
+        }
+
+        &-description{
+            @include font (20px, 400);
+            color: $lightGrey;
+        }
+    }
+
+    &__subtitle{
+        @include font(54px, 800, italic);
+        text-align: center;
+        margin: 0 0 30px 0;
+        position: relative;
+
+        &::before{
+            content:'';
+            position: absolute;
+            background: url(../img/icons/start-mark.png);
+            top: -44px;
+            left: -103px;
+            width: 100px;
+            height: 88px;
+        }
+
+        &::after{
+            content:'';
+            position: absolute;
+            background: url(../img/icons/end-mark.png);
+            bottom: -44px;
+            right: -103px;
+            width: 100px;
+            height: 88px;
+        }
+
+        &-blur{
+            position: absolute;
+            left: 482px;
+            top: 580px;
+            width: 490px;
+            height: 490px;
+            background: rgba(51, 183, 188, 0.3);
+            transform: rotate(-10.5deg);
+            filter: blur(160px);
+        }
+    }
+
+    &__author{
+        margin: 0 auto;
+        max-width: 1300px;
+        text-align: right;
+        padding: 0 20px;
+
+        &-name{
+            @include font(32px, 700);
+            padding: 0 50px 0 0;
+        }
+
+        &-position{
+            @include font(20px, 500);
+            padding: 0 50px 0 0;
+            color: $grey;
+        }
+    }
+
+    &__img{
+        margin: 100px 0 0 0;
+    }
+}
+
+
+// Tablet
+@include tablet{
+
+    .about-us{
+        padding: 0 0 160px 0;
+
+        &__title{
+            @include font(100px, 700);
+            padding: 0 0 110px 0;
+        }
+
+        &__subtitle{
+            @include font(44px, 800);
+        }
+
+        &__features{
+
+            &-subtitle{
+                @include font(20px, 500);
+
+                &-number{
+                    @include font(76px, 700);
+                    // -webkit-text-stroke: 3px $turquoise;
+                }
+            }
+        }
+
+        &__author{
+
+            &-name{
+                @include font(24px, 700);
+            }
+
+            &-position{
+                @include font(18px, 500);
+            }
+        }
+    }
+}
+
+
+// Mobile
+@include mobile{
+
+    .about-us{
+        padding: 0 0 120px 0;
+
+        &__title{
+            @include font(72px, 700);
+            padding: 0 0 60px 0;
+        }
+
+        &__subtitle{
+            @include font(32px, 700);
+        }
+
+        &__features{
+            padding: 0 20px 100px 20px;
+
+            &-list{
+                flex-direction: column;
+                gap: 44px;
+            }
+
+            &-description{
+                text-align: center;
+            }
+
+            &-subtitle{
+                text-align: center;
+
+                &-number{
+                    @include font(76px, 700);
+                    // -webkit-text-stroke: 3px $turquoise;
+                }
+            }
+        }
+
+        &__author{
+
+            &-name{
+                @include font(18px, 700);
+            }
+
+            &-position{
+                @include font(14px, 500);
+            }
+        }
+    }    
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <title>Trinity</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- Start Header -->
+        <header class="header">
+            <div class="header__container">
+
+                <nav class="header__menu">
+                    <ul class="menu__list-left">
+                        <!-- <li class="menu__item menu__item-left-burger"><a class="menu__item-link" href="#"><img class="menu__item-link-img" src="./img/menu.png" alt=""></a></li> -->
+                        <li class="menu__item"><a class="menu__item-link" href="#">Car List</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Yacht list</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Chauffeur</a></li>
+                    </ul>
+                    <a class="header__logo" href="#">
+                        <img src="./img/logo.png" alt="Trinity">
+                    </a>
+                    <ul class="menu__list-right">
+                        <li class="menu__item"><a class="menu__item-link" href="#">+971 58 590 7875</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Dubai</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">eng</a></li>
+                        <!-- <li class="menu__item-burger"><a href="#"><img src="./img/menu.png" alt=""></a></li>       -->
+                    </ul>
+
+                    <div class="menu__item-burger" id="menu-open">
+                        <a href="#"><img src="./img/menu.png" alt=""></a>
+                    </div>
+                </nav>
+
+                <!-- Start mobile menu-burger -->
+                <div class="mobile-menu__wrap hidden" id="mobile-menu">
+
+                    <div class="mobile-menu__container">
+
+                        <button class="mobile-menu__btn-close" id="menu-close"></button>
+
+                        <img class="mobile-logo" src="./img/logo.png" alt="Logo" width="93" height="87">
+
+                        <nav class="mobile-menu">
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item"><a href="#">Car List</a></li>
+                                <li class="mobile-menu__item"><a href="#">Conditions</a></li>
+                                <li class="mobile-menu__item"><a href="#">About Us</a></li>
+                                <li class="mobile-menu__item"><a href="#">Dubai Guide</a></li>
+                                <li class="mobile-menu__item"><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="mobile-menu__info">
+                        <ul class="mobile-menu__info-list">
+
+                            <li class="mobile-menu__info-item">
+                                <ul>
+                                    <li>+1 929 472 6676</li>
+                                    <li>hello@redcollar.co</li>
+                                </ul>
+                            </li>
+
+                            <li class="mobile-menu__info-item">
+                                <ul>
+                                    <li>224 W 35th St, Ste 500 PMB 141,</li>
+                                    <li>New York, NY 10001, USA</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul class="mobile-menu__info-social">
+                                    <li><a href=""><img src="./img/icons/mobile/facebook.png" alt="facebook" width="51" height="51"></a></li>
+                                    <li><a href=""><img src="./img/icons/mobile/instagram.png" alt="instagram" width="51" height="51"></a></li>
+                                    <li><a href=""><img src="./img/icons/mobile/linkedin.png" alt="linkedin" width="51" height="51"></a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- End mobile menu-burger -->
+
+                    <h1 class="header__title">Dubai</h1>
+                    <h2 class="header__subtitle">luxury car rental</h2>
+                
+                <div class="header__social">
+                    <a class="header__social-telegram" href="#"><img src="./img/icons/telegram.png" alt="telegram" width="30" height="30"></a>
+                    <a class="header__social-whatsapp" href="#"><img src="./img/icons/whatsapp.png" alt="whatsapp" width="30" height="30"></a>
+                </div>
+
+            </div>
+        </header>
+        <!-- End Header -->
+
+
+        <main>
+        <!-- Section most-popular -->
+            <section class="most-popular block-hidden">
+                <div class="most-popular__info">
+                    <h2 class="most-popular__title">Most Popular</h2>
+
+                    <div class="most-popular__info-search">
+                        <input class="most-popular__info-search most-popular__info-search_input" type="text" placeholder="Car search">
+                        <img class="most-popular__info-search most-popular__info-search_button" src="./img/icons/search-button.svg" alt="search_button" width="30" height="30">
+                    </div>
+
+                    <div class="most-popular__info-text">
+                        <ul>
+
+                            <li class="most-popular__info-text-item">
+                                <a class="most-popular__info-text-item most-popular__info-text-item_link" href="#">
+                                    <h3 class="most-popular__info-text-item most-popular__info-text-item_title">Audi</h3>
+                                    <p class="most-popular__info-text-item most-popular__info-text-item_subtitle">Huracan EVO Spyder RS6</p>
+                                </a>
+                                <a class="most-popular__info-text-item most-popular__info-text-item_link" href="#">
+                                    <h3 class="most-popular__info-text-item most-popular__info-text-item_title">Lamborghini</h3>
+                                    <p class="most-popular__info-text-item most-popular__info-text-item_subtitle">Urus</p>
+                                </a>
+                                <a class="most-popular__info-text-item most-popular__info-text-item_link" href="#">
+                                    <h3 class="most-popular__info-text-item most-popular__info-text-item_title">Lamborghini</h3>
+                                    <p class="most-popular__info-text-item most-popular__info-text-item_subtitle">Huracan EVO Spyder </p>
+                                </a>
+                                <a class="most-popular__info-text-item most-popular__info-text-item_link" href="#">
+                                    <h3 class="most-popular__info-text-item most-popular__info-text-item_title">Ferrari</h3>
+                                    <p class="most-popular__info-text-item most-popular__info-text-item_subtitle">Roma</p>
+                                </a>
+                                <a class="most-popular__info-text-item most-popular__info-text-item_link" href="#">
+                                    <h3 class="most-popular__info-text-item most-popular__info-text-item_title">Range Rover</h3>
+                                    <p class="most-popular__info-text-item most-popular__info-text-item_subtitle">Autobiography New 2022</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="most-popular__img">
+                    <img class="most-popular__img-img" src="./img/most-popular-img.jpg" alt="most-popular__img" width="1100" height="860">
+                    <div class="most-popular__img-description">
+                        <p class="most-popular__img-description-text">Rent Lamborghini<br/> Huracan STO</p>
+                        <div class="most-popular__img-description-more">
+                            <p>Rent is from aed</p>
+                            <p class="price">2 400$</p>
+                            <p>per day</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- End section most-popula -->
+
+
+        <!-- Start section offers -->
+            <section class="offers block-hidden">
+                <h2 class="visually-hidden">Offers</h2>
+                <nav class="offers__nav">
+                    <ul class="offers__nav-list">
+
+                        <li class="offers__nav-item">
+                            <a class="offers__nav-item-link" href="#">Special Offer</a>
+                        </li>
+                        <li class="offers__nav-item">
+                            <a class="offers__nav-item-link" href="#">New car</a>
+                        </li>
+                        <li class="offers__nav-item">
+                            <a class="offers__nav-item-link" href="#">Most popular</a>
+                        </li>
+                        <li class="offers__nav-item">
+                            <a class="offers__nav-item-link" href="#">Daily</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="offers__pictures">
+                    <ul class="offers__pictures-list">
+
+                        <li class="offers__pictures-item">
+                            <img class=" offers__pictures-item-img" src="./img/Lamborghini-Urus.jpg" alt="Lamborghini Urus" width="955" height="550">
+                            <div class="offers__pictures-item-block">
+                                <h3 class="offers__pictures-item offers__pictures-item_title">Lamborghini Urus</h3>
+                                <a class="offers__pictures-item offers__pictures-item_link" href="#">rent</a>    
+                            </div>
+                        </li>
+
+                        <li class="offers__pictures-item">
+                            <img class=" offers__pictures-item-img" src="./img/Ferrari_Roma.jpg" alt="Ferrari Roma" width="955" height="550">
+                            <div class="offers__pictures-item-block">
+                                <h3 class="offers__pictures-item offers__pictures-item_title">Ferrari Roma</h3>
+                                <a class="offers__pictures-item offers__pictures-item_link" href="#">rent</a>
+                            </div>
+                        </li>
+
+                        <li class="offers__pictures-item">
+                            <img class=" offers__pictures-item-img" src="./img/Rolls-Royce-Ghost.jpg" alt="Rolls-Royce Ghost" width="955" height="550">
+                            <div class="offers__pictures-item-block">
+                                <h3 class="offers__pictures-item offers__pictures-item_title">Rolls-Royce Ghost</h3>
+                                <a class="offers__pictures-item offers__pictures-item_link" href="#">rent</a>
+                            </div>
+                        </li>
+
+                        <li class="offers__pictures-item">
+                            <img class=" offers__pictures-item-img" src="./img/Porsche-911-Turbo-S.jpg" alt="Porsche 911 Turbo S" width="955" height="550">
+                            <div class="offers__pictures-item-block">
+                                <h3 class="offers__pictures-item offers__pictures-item_title">Porsche 911 Turbo S</h3>
+                                <a class="offers__pictures-item offers__pictures-item_link" href="#">rent</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="offers-more" href="#">View all</a>
+
+            </section>
+        <!-- End section offers -->
+
+
+        <!-- Start section About Us -->
+        <section class="about-us block-hidden">
+            <div class="about-us__container">
+
+                <h2 class="about-us__title">About Us</h2>
+
+                <div class="about-us__features">
+                    <ul class="about-us__features-list">
+
+                        <li class="about-us__features-iteam">
+                            <p class="about-us__features-subtitle"><span class="about-us__features-subtitle-number">8</span> year</p>
+                            <p class="about-us__features-description">We've come a long way from a 2-people company to winning at Webby's.</p>
+                        </li>
+
+                        <li class="about-us__features-iteam">
+                            <p class="about-us__features-subtitle"><span class="about-us__features-subtitle-number">72</span> cars</p>
+                            <p class="about-us__features-description">We've come a long way from a 2-people company to winning at Webby's.</p>
+                        </li>
+
+                        <li class="about-us__features-iteam">
+                            <p class="about-us__features-subtitle"><span class="about-us__features-subtitle-number">190</span> people</p>
+                            <p class="about-us__features-description">We've come a long way from a 2-people company to winning at Webby's.</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="about-us__author">
+                    <h3 class="about-us__subtitle">I am with cars for over 18 years. My auto passion and attention to details will make your experience with us second to none. Guaranteed.</h3>
+                    <div class="about-us__subtitle-blur"></div>
+                    <p class="about-us__author-name">Kirill Aliev, MBA</p>
+                    <p class="about-us__author-position">CEO Trinity car rental boutique</p>
+                </div>
+
+                <img class="about-us__img" src="./img/about-us.jpg" alt="About us" width="1920" height="1083">
+            </div>
+
+        </section>
+        <!-- End section About Us -->
+
+
+        <!-- Start Section Reviews-->
+        <section class="reviews block-hidden">
+            <h2 class="reviews__title">Reviews</h2>
+
+            <ul class="reviews__list">
+
+                <li class="reviews__item">
+                    <img src="./img/reviews-01.jpg" alt="review" widht="476" height="740">
+                </li>
+
+                <li class="reviews__item">
+                    <img src="./img/reviews-02.jpg" alt="review" widht="476" height="740">
+                </li>
+
+                <li class="reviews__item">
+                    <img src="./img/reviews-03.jpg" alt="review" widht="476" height="740">
+                </li>
+
+                <li class="reviews__item">
+                    <img src="./img/reviews-04.jpg" alt="review" widht="476" height="740">
+                </li>
+
+            </ul>
+
+        </section>
+        <!-- End Section Reviews-->
+
+
+        <!-- Start Section Advantages-->
+        <section class="advantages block-hidden">
+            <h2 class="advantages__title">Advantages</h2>
+
+            <ul class="advantages__list">
+
+                <li class="advantages__item">
+                    <a class="advantages__item-link" href="#">
+                        <img class="advantages__item-img" src="./img/advantages/advantages-01.jpg" alt="advantages" widht="640" height="459">
+                        <p class="advantages__item-text">40+ unique cars for rent from our fleet</p>
+                    </a>
+                </li>
+
+                <li class="advantages__item">
+                    <a class="advantages__item-link" href="#">
+                        <img class="advantages__item-img" src="./img/advantages/advantages-01.jpg" alt="advantages" widht="640" height="459">
+                        <p class="advantages__item-text">Delivery and return of cars in Dubai 24/7</p>
+                    </a>
+                </li>
+
+                <li class="advantages__item">
+                    <a class="advantages__item-link" href="#">
+                        <img class="advantages__item-img" src="./img/advantages/advantages-01.jpg" alt="advantages" widht="640" height="459">
+                        <p class="advantages__item-text">Insurance without a deductible for each car</p>
+                    </a>
+                </li>
+
+                <li class="advantages__item">
+                    <a class="advantages__item-link" href="#">
+                        <img class="advantages__item-img" src="./img/advantages/advantages-01.jpg" alt="advantages" widht="640" height="459">
+                        <p class="advantages__item-text">No video or audio recording in the car</p>
+                    </a>
+                </li>
+
+                <li class="advantages__item">
+                    <a class="advantages__item-link" href="#">
+                        <img class="advantages__item-img" src="./img/advantages/advantages-01.jpg" alt="advantages" widht="640" height="459">
+                        <p class="advantages__item-text">24/7 technical support</p>
+                    </a>
+                </li>
+
+                <li class="advantages__item">
+                    <a class="advantages__item-link" href="#">
+                        <img class="advantages__item-img" src="./img/advantages/advantages-01.jpg" alt="advantages" widht="640" height="459">
+                        <p class="advantages__item-text">All models have a premium package</p>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        <!-- End Section Advantages-->
+
+
+        <!-- Start Section Ask-->
+        <section class="ask block-hidden">
+
+            <div class="ask__block-form">
+                <h2 class="ask__title">Ask us anything</h2>
+                <form class="ask__form" action="#">
+                    <input class="ask__form-input" type="text" placeholder="Name">
+                    <input class="ask__form-input" type="email" placeholder="E-mail">
+                    <input class="ask__form-input" type="tel" placeholder="+7 (999) 999 - 99 - 99">
+                    <textarea class="ask__form-input ask__form-input_field" name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
+                    <button class="ask__form-btn" type="submit">Send the request</button>
+                </form>
+            </div>
+            
+            <div class="ask__map" id="map">
+                <div class="ask__map-container" id="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113043.1187083982!2d55.28023358373432!3d25.2828666900985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z0JTRg9Cx0LDQuSAtINCe0LHRitC10LTQuNC90LXQvdC90YvQtSDQkNGA0LDQsdGB0LrQuNC1INCt0LzQuNGA0LDRgtGL!5e0!3m2!1sru!2sru!4v1681618561617!5m2!1sru!2sru" width="100%" height="860" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- <img src="./img/ask-img.jpg" alt="map" widht="1100" height="860"> -->
+            </div>
+
+        </section>
+        <!-- End Section Ask-->
+
+
+        <!-- Start Section Discount-->
+        <section class="discount block-hidden">
+
+            <div class="discount__container">
+                <div class="discount__wrap">
+                    <h2 class="discount__title">Get a discount of up to 60%</h2>
+                    <p class="discount__text">Get the latest articles and business updates that you need to know, you’ll even get special recommendations weekly.</p>
+    
+                    <form class="discount__form" action="#">
+                        <input class="discount__form-input" type="text" placeholder="          Your email">
+                        <button class="discount__form-btn" type="submit">Receive</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Section Discount-->
+        </main>
+
+        <!-- Start Footer -->
+        <footer class="footer block-hidden">
+                    <div class="footer__wrap">
+    
+                        <section class="footer-info">
+                            <h3 class="visually-hidden">Footer info</h3>
+                            <nav class="footer-info__nav">
+                                <ul>
+                                    <li class="footer-info__nav-item">For Customers</li>
+                                    <li><a class="footer-info__nav-link" href="#">About Us</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Conditions</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Testimonials</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Articles</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Contacts</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="footer-info__nav-item">Car List</li>
+                                    <li><a class="footer-info__nav-link" href="#">SUVs</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Convertibles</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Sports Cars</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Premium</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Coupe</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="footer-info__nav-item">Car brand</li>
+                                    <li><a class="footer-info__nav-link" href="#">BMW</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">AUDI</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Ferrari</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Bentley</a></li>
+                                    <li><a class="footer-info__nav-link" href="#">Cadillac</a></li>
+                                </ul>
+                            </nav>
+    
+                            <div class="footer-info__contacts">
+                                <div class="footer-info__contacts-tel">
+                                    <a href="tel:+971585907875">+971 58 590 7875</a>
+                                    <a class="footer-info__contacts-telegram" href="#"><img class="footer-info__contacts-img" src="./img/icons/telegram.png" alt="telegram" width="24" height="23"></a>
+                                    <a class="footer-info__contacts-whatsapp" href="#"><img class="footer-info__contacts-img" class="footer-info__contacts-whatsapp" src="./img/icons/whatsapp.png" alt="whatsapp" width="22" height="22"></a>
+                                </div>
+    
+                                <button class="footer-info__btn">request a callback</button>
+                                <p class="footer-info__text">24 4th St - Al Quoz - Al Quoz Industrial Area 3 - Dubai</p>
+    
+                                <div class="footer-info__callback">
+                                    <input class="footer-info__callback-input" type="text" placeholder="Write your E-mail">
+                                    <button class="footer-info__callback-btn" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </section>
+    
+                        <section class="footer-payment">
+                            <h3 class="visually-hidden">Footer payment</h3>
+                            <img src="./img/icons/footer/visa.png" alt="Visa" width="90" height="27">
+                            <img src="./img/icons/footer/master-card.png" alt="Master Card" width="78" height="43">
+                            <img src="./img/icons/footer/american-express.png" alt="American Express" width="99" height="39">
+                            <img src="./img/icons/footer/union-pay.png" alt="Union pay" width="72" height="44">
+                            <img src="./img/icons/footer/tether.png" alt="Tether" width="124" height="27">
+                            <img src="./img/icons/footer/giro-pay.png" alt="Giro pay" width="84" height="36">
+                            <img src="./img/icons/footer/cash.png" alt="Cash" width="117" height="26">
+                            <img src="./img/icons/footer/safety-pay.png" alt="Safety pay" width="126" height="34">
+                        </section>
+    
+                        <section class="footer-policy">
+                            <h3 class="visually-hidden">Footer policy</h3>
+                            <a class="footer-policy__privacy" href="#">Privacy Policy</a>
+                            <p class="footer-policy__copyright">©2023 TRINITY. All rights reserved</p>
+    
+                            <div class="footer-policy__social">
+                                <a href="#"><img src="./img/icons/footer/social/facebook.svg" alt="Facebook" width="11" height="21"></a>
+                                <a href="#"><img src="./img/icons/footer/social/tik-tok.svg" alt="Tok-tok" width="16" height="21"></a>
+                                <a href="#"><img src="./img/icons/footer/social/youtube.svg" alt="Youtube" width="25" height="18"></a>
+                                <a href="#"><img src="./img/icons/footer/social/instagram.svg" alt="Instagram" width="22" height="22"></a>
+                            </div>
+                        </section>
+                    </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+</body>
+</html>

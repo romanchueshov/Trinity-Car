@@ -1,0 +1,126 @@
+// Section Ask us
+.ask{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 0 250px 0;
+
+    &__block-form{
+        flex-grow: 1;
+        max-width: 700px;
+        margin: 0 60px 0 0;
+    }
+
+    &__title{
+        @include font(70px, 700);
+        text-align: center;
+        margin: 0 0 80px 0;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        @include font (20px, 400);
+
+        &-input{
+            width: 100%;
+            height: 90px;
+            padding: 0 0 0 30px;
+            margin: 0 0 30px 0;
+            background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
+            border: 1px solid $darkGrey;
+            border-radius: 10px;
+
+            &_field{
+                padding: 36px 0 0 30px;
+                height: auto;
+                resize: none;
+            }
+        }
+
+        &-btn{
+            align-self: flex-start;
+            margin: 7px 0 0 0;
+            padding: 30px 65px;
+            color: $white;
+            border: 2px solid $turquoise;
+            border-radius: 10px;
+            text-transform: uppercase;
+            @include font (18px, 700);
+
+            &:hover{
+                background-color: $turquoise;
+                transition: 0.2s ease-in;
+            }
+        }
+    }
+
+    &__map{
+        flex-grow: 9;
+    }
+}
+
+
+// Tablet
+@include tablet{
+    .ask{
+        flex-direction: column;
+        padding: 0 0 120px 0;
+
+        &__title{
+            @include font(56px, 700);
+            margin: 0 0 60px 0;
+        }
+
+        &__block-form{
+            margin: 0 auto;
+            width: 600px;
+        }
+
+        &__form{
+
+            &-btn{
+                align-self: center;
+            }
+        }
+    }
+}
+
+
+// Mobile
+@include mobile{
+    .ask{
+        padding: 0 0 80px 0;
+
+        &__title{
+            @include font(40px, 700);
+            margin: 0 0 40px 0;
+        }
+
+        &__block-form{
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        &__form{
+
+            &-input{
+                height: 70px;
+                padding: 0 0 0 20px;
+    
+                &_field{
+                    padding: 20px 0 0 20px;
+                    height: auto;
+                    resize: none;
+                }
+            }
+
+            &-btn{
+                align-self: center;
+                padding: 25px 45px;
+            }
+        }
+    }
+}

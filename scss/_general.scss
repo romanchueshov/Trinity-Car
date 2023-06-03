@@ -1,0 +1,47 @@
+// Color variables
+$black: #000000;
+$lightBlack: #1E1D1E;
+$dimGrey: #2B2B2B;
+$darkGrey: #414141;
+$grey: #707070;
+$lightGrey: #DBDBDB;
+$white: #ffffff;
+$blue: #34AADF;
+$turquoise: #33B7BC;
+$green: #43D854;
+
+// Adaptation variables
+$desktop-width: 1920px;
+$tablet-1630: 1630px;
+$tablet-width: 1280px;
+$mobile-width: 680px;
+
+body{
+    width: 100%;
+    background-color: $darkGrey;
+    font-family: 'Roboto', sans-serif;
+    color: $white;
+
+    a{
+        color: $white;
+    }
+}
+
+.wrap{
+    margin: 0 auto;
+    max-width: 1920px;
+    background-color: $black;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.block-hidden{
+    opacity: 0;
+}

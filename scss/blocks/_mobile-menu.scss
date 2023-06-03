@@ -1,0 +1,72 @@
+// Mobile
+@include mobile{
+    .mobile-menu{
+
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: $black;
+            padding: 77px 35px 77px 35px;
+            z-index: 9;
+        }
+
+        &__container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            position: relative;
+            margin: 0 0 50px 0;
+        }
+
+        &__btn-close{
+            position: absolute;
+            top: -50px;
+            right: 10px;
+
+            &::after{
+                content:'\00d7';
+                display: block;
+                font-size: 40px;
+            }
+        }
+
+        &__list{
+            @include font(18px, 700);
+        }
+
+        &__item{
+            padding: 0 0 10px 0;
+
+            &a{
+                &:hover{
+                    color: $turquoise;
+                }
+            }
+        }
+
+        &__info{
+            
+            &-list{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 50px;
+            }
+
+            &-item > ul > li{
+                list-style-type: disc;
+            }
+
+            &-social{
+                display: flex;
+                gap: 30px;
+            }
+        }
+    }
+}
